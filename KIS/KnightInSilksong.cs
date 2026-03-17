@@ -319,12 +319,14 @@ public partial class KnightInSilksong : BaseUnityPlugin
         {
             ToggleKnight();
             ProgressionManager.setup();
+            DebugModIntegration.Init();
 
             shouldToggleKnight = false;
         }
         if (HeroController.instance != null)
         {
             ProgressionManager.setProgression();
+            DebugModIntegration.Update();
         }
 
 

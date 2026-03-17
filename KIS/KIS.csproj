@@ -35,6 +35,7 @@
     <PackageReference Include="Silksong.PrepatcherPlugin" Version="1.3.0" PrivateAssets="all"/>
 
     <LocalReferences Include="$(ManagedDir)*.dll" Exclude="$(ManagedDir)Mono*.dll;$(ManagedDir)netstandard.dll;$(ManagedDir)System*.dll;$(ManagedDir)mscorlib.dll" />
+    <LocalReferences Include="$(DebugMod)"/>
     <Reference Include="@(LocalReferences)" Private="false" Publicize="true" />
     <EmbeddedResource Include="Resources/*" />
   </ItemGroup>
